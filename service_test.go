@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/abiosoft/caddy-git/gittest"
+	"github.com/awoodbeck/caddy-git/gittest"
 )
 
 func init() {

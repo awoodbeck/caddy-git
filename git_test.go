@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/abiosoft/caddy-git/gittest"
+	"github.com/awoodbeck/caddy-git/gittest"
 )
 
 // init sets the OS used to fakeOS.
@@ -65,7 +65,7 @@ func TestGit(t *testing.T) {
 	// prepare
 	repos := []*Repo{
 		nil,
-		&Repo{Path: "gitdir", URL: "success.git"},
+		{Path: "gitdir", URL: "success.git"},
 	}
 	for _, r := range repos {
 		repo := createRepo(r)
@@ -113,10 +113,10 @@ Command 'echo Hello' successful.
 
 	// pull with error
 	repos = []*Repo{
-		&Repo{Path: "gitdir", URL: "http://github.com:u/repo.git"},
-		&Repo{Path: "gitdir", URL: "https://github.com/user/repo.git", Then: []Then{NewThen("echo", "Hello")}},
-		&Repo{Path: "gitdir"},
-		&Repo{Path: "gitdir", KeyPath: ".key"},
+		{Path: "gitdir", URL: "http://github.com:u/repo.git"},
+		{Path: "gitdir", URL: "https://github.com/user/repo.git", Then: []Then{NewThen("echo", "Hello")}},
+		{Path: "gitdir"},
+		{Path: "gitdir", KeyPath: ".key"},
 	}
 
 	gittest.CmdOutput = "git@github.com:u1/repo.git"

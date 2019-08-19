@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/abiosoft/caddy-git/gitos"
+	"github.com/awoodbeck/caddy-git/gitos"
 	"github.com/caddyserver/caddy"
 )
 

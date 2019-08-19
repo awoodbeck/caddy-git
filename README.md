@@ -2,7 +2,7 @@
 
 Middleware for [Caddy](https://caddyserver.com).
 
-[![Build Status](https://travis-ci.org/abiosoft/caddy-git.svg?branch=master)](https://travis-ci.org/abiosoft/caddy-git)
+[![Build Status](https://travis-ci.org/awoodbeck/caddy-git.svg?branch=master)](https://travis-ci.org/awoodbeck/caddy-git)
 
 git clones a git repository into the site. This makes it possible to deploy your site with a simple git push.
 

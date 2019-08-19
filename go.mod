@@ -1,4 +1,4 @@
-module github.com/abiosoft/caddy-git
+module github.com/awoodbeck/caddy-git
 
 go 1.12
 

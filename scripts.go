@@ -6,7 +6,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/abiosoft/caddy-git/gitos"
+	"github.com/awoodbeck/caddy-git/gitos"
 )
 
 var (
